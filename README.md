@@ -2,7 +2,7 @@
 
 ## Objetivo: criar uma aplicação que funcione de modo semelhante a https://survey-form.freecodecamp.rocks
 
-# Histórias de usuário:
+# Regras de usuário:
 
 - Você deve ter um título de página em um elemento h1 com o id title
 - Você deve ter uma breve explicação em um elemento p com o id description
