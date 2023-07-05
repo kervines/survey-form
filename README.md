@@ -22,4 +22,4 @@
 - Dentro do elemento de formulário, você receberá um botão com o id submit para enviar as informações
 - Atenda às histórias de usuário e passe em todos os testes abaixo para concluir este projeto. Dê ao projeto o seu próprio estilo pessoal. Boa programação!
 
-### Observação: não se esqueça de adicionar <link rel="stylesheet" href="styles.css"> em seu HTML para vincular sua folha de estilo e aplicar seu CSS
+### Observação: não se esqueça de adicionar link _rel="stylesheet" href="styles.css"_ em seu HTML para vincular sua folha de estilo e aplicar seu CSS.
