@@ -10,54 +10,74 @@
 
 <body>
   <header class="header">
-    <h1 id="title">Formulário de Pesquisa</h1>
+    <h1 id="title">Formulário de Pesquisa Acadêmico</h1>
     <p id="description">Este é um formulário de pesquisa.</p>
   </header>
   <main class="main">
     <form action="" id="survey-form">
-      <fieldset>
+      <fieldset class="section">
+        <legend>Informações pessoais</legend>
         <label for="name" id="name-label">Nome</label>
         <input type="text" id="name" placeholder="Nome Completo" required>
         <label for="email" id="email-label">E-mail</label>
         <input type="email" id="email" placeholder="E-mail" required>
         <label for="number" id="number-label">Telefone</label>
         <input type="number" id="number" min="8" max="11" placeholder="(DDD) 9 9999-9999">
+        <label for="university">Instituição de Ensino</label>
+        <input type="text" id="university" placeholder="Universidade/Faculdade" required>
       </fieldset>
 
       <br>
       <br>
-      <fieldset>
-        <select name="" id="dropdown">
-          <option value="Valor 1">Valor 1</option>
-          <option value="Valor 2">Valor 2</option>
-          <option value="Valor 3">Valor 3</option>
-          <option value="Valor 4">Valor 4</option>
+      <fieldset class="section">
+        <legend>Detalhes do curso</legend>
+        <label for="course-name">Nome do Curso</label>
+        <input type="text" id="course-name" required>
+
+        <label for="dropdown">Nível acadêmico</label>
+        <select name="course-level" id="dropdown">
+          <option value="undergraduate">Graduação</option>
+          <option value="postgraduate">Pós-graduação</option>
+          <option value="master">Mestrado</option>
+          <option value="doctor">Doutorado</option>
         </select>
+
+        <label for="period">Semestre</label>
+        <input type="number" required>
+
+        <label for="course-state">Situação acadêmica</label>
+        <fieldset class="section" id="course-state">
+          <label for="">Em conclusão</label>
+          <input type="radio" name="state" value='conclusion'>
+          <label for="">Completo</label>
+          <input type="radio" name="state" value='completed'>
+          <label for="">Trancado</label>
+          <input type="radio" name="state" value='suspended'>
+        </fieldset>
       </fieldset>
       <br>
       <br>
-      <fieldset>
-        <label for="">Radio 1</label>
-        <input type="radio" name="radio" value='radio'>
-        <label for="">Radio 2</label>
-        <input type="radio" name="radio" value='radio'>
-      </fieldset>
-      <br>
-      <br>
-      <fieldset>
-        <input type="checkbox" value="checkbox">
-        <label for="">Checkbox 1</label>
-        <input type="checkbox" value="checkbox">
-        <label for="">Checkbox 2</label>
-        <input type="checkbox" value="checkbox">
-        <label for="">Checkbox 3</label>
-        <input type="checkbox" value="checkbox">
-        <label for="">Checkbox 4</label>
-        <input type="checkbox" value="checkbox">
-        <label for="">Checkbox 5</label>
+
+      <fieldset class="section">
+        <legend>Atividades acadêmicas e extracurriculares</legend>
+        <input type="checkbox" value="scholarship">
+        <label for="">Bolsista</label>
+        <input type="checkbox" value="assistantship">
+        <label for="">Monitoria</label>
+        <input type="checkbox" value="project">
+        <label for="">Projeto de pesquisa</label>
+        <input type="checkbox" value="group">
+        <label for="">Grupos de estudos</label>
+        <input type="checkbox" value="volunteer">
+        <label for="">Voluntário</label>
       </fieldset>
 
-      <fieldset>
+      <br>
+      <br>
+
+      <fieldset class="section">
+        <legend>Avaliação da Instituição</legend>
+        <p>Deixe um comentário sobre sua Instituição de Ensino</p>
         <label for="msg">Mensagem</label>
         <textarea name="msg" id="" cols="30" rows="5"></textarea>
       </fieldset>
