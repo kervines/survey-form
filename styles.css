@@ -8,19 +8,55 @@
 
 body {
   font-family: 'Roboto Slab', serif;
-  font-size: 0.8rem;
+  font-size: 62.5%;
+  color: #222;
 }
 
 .header {
-  background-color: aquamarine;
-  padding: 0.5rem;
+  padding: 0.8rem;
   text-align: center;
 }
 
 .header h1 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
 }
 
 .header p {
-  font-size: 0.85rem;
+  font-size: 1rem;
+}
+
+.main {
+  padding: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.main .section {
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  /* border: none; */
+}
+
+fieldset {
+  display: grid;
+}
+
+fieldset.info {
+  gap: 0.5rem;
+  grid-template-columns: 1fr 4fr;
+  grid-auto-rows: 1.3rem;
+  padding: 1rem 0.2rem;
+  align-items: center;
+}
+
+input {
+  font-size: 1rem;
+  border: 1px solid;
+  border-radius: 4px;
+  padding: 0.2rem;
+}
+
+label[for='university'] {
+  font-size: 0.8rem;
 }
