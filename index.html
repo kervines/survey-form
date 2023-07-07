@@ -13,10 +13,13 @@
     <h1 id="title">Formulário de Pesquisa Acadêmico</h1>
     <p id="description">Venha compartilhar sua experiência acadêmica e deixar seu legado!</p>
   </header>
+
   <main class="main">
+
     <form action="" id="survey-form">
-      <fieldset class="section">
-        <legend>Informações pessoais</legend>
+
+      <fieldset class="section info">
+        <legend class="legend">Informações pessoais</legend>
         <label for="name" id="name-label">Nome</label>
         <input type="text" id="name" placeholder="Nome Completo" required>
         <label for="email" id="email-label">E-mail</label>
@@ -27,10 +30,8 @@
         <input type="text" id="university" placeholder="Universidade/Faculdade" required>
       </fieldset>
 
-      <br>
-      <br>
       <fieldset class="section">
-        <legend>Detalhes do curso</legend>
+        <legend class="legend">Detalhes do curso</legend>
         <label for="course-name">Nome do Curso</label>
         <input type="text" id="course-name" required>
 
@@ -46,7 +47,7 @@
         <input type="number" required>
 
         <fieldset class="section" id="course-state">
-          <legend>Situação acadêmica</legend>
+          <legend class="legend">Situação acadêmica</legend>
           <input type="radio" name="state" value='conclusion'>
           <label for="">Em conclusão</label>
           <input type="radio" name="state" value='completed'>
@@ -55,11 +56,9 @@
           <label for="">Trancado</label>
         </fieldset>
       </fieldset>
-      <br>
-      <br>
 
       <fieldset class="section">
-        <legend>Atividades acadêmicas e extracurriculares</legend>
+        <legend class="legend">Atividades acadêmicas e extracurriculares</legend>
         <input type="checkbox" value="scholarship">
         <label for="">Bolsista</label>
         <input type="checkbox" value="assistantship">
@@ -72,11 +71,8 @@
         <label for="">Voluntário</label>
       </fieldset>
 
-      <br>
-      <br>
-
       <fieldset class="section">
-        <legend>Avaliação da Instituição</legend>
+        <legend class="legend">Avaliação da Instituição</legend>
         <p>Deixe um comentário sobre sua Instituição de Ensino</p>
         <label for="msg">Mensagem</label>
         <textarea name="msg" id="" cols="30" rows="5"></textarea>
