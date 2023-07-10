@@ -9,77 +9,86 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1 id="title">Formulário de Pesquisa Acadêmico</h1>
-    <p id="description">Venha compartilhar sua experiência acadêmica e deixar seu legado!</p>
-  </header>
+  <div class="background">
+    <header class="header">
+      <h1 id="title">Formulário de Pesquisa Acadêmico</h1>
+      <p id="description">Venha compartilhar sua experiência acadêmica e deixar seu legado!</p>
+    </header>
 
-  <main class="main">
+    <main class="main">
 
-    <form action="" id="survey-form">
+      <form action="" id="survey-form">
 
-      <fieldset class="section info">
         <legend class="legend">Informações pessoais</legend>
-        <label for="name" id="name-label">Nome</label>
-        <input type="text" id="name" placeholder="Nome Completo" required>
-        <label for="email" id="email-label">E-mail</label>
-        <input type="email" id="email" placeholder="E-mail" required>
-        <label for="number" id="number-label">Telefone</label>
-        <input type="number" id="number" min="8" max="11" placeholder="(DDD) 9 9999-9999">
-        <label for="university">Instituição de Ensino</label>
-        <input type="text" id="university" placeholder="Universidade/Faculdade" required>
-      </fieldset>
-
-      <fieldset class="section">
-        <legend class="legend">Detalhes do curso</legend>
-        <label for="course-name">Nome do Curso</label>
-        <input type="text" id="course-name" required>
-
-        <label for="dropdown">Nível acadêmico</label>
-        <select name="course-level" id="dropdown">
-          <option value="undergraduate">Graduação</option>
-          <option value="postgraduate">Pós-graduação</option>
-          <option value="master">Mestrado</option>
-          <option value="doctor">Doutorado</option>
-        </select>
-
-        <label for="period">Semestre</label>
-        <input type="number" required>
-
-        <fieldset class="section" id="course-state">
-          <legend class="legend">Situação acadêmica</legend>
-          <input type="radio" name="state" value='conclusion'>
-          <label for="">Em conclusão</label>
-          <input type="radio" name="state" value='completed'>
-          <label for="">Completo</label>
-          <input type="radio" name="state" value='suspended'>
-          <label for="">Trancado</label>
+        <fieldset class="section info">
+          <label for="name" id="name-label">Nome</label>
+          <input type="text" id="name" placeholder="Nome Completo" required>
+          <label for="email" id="email-label">E-mail</label>
+          <input type="email" id="email" placeholder="E-mail" required>
+          <label for="number" id="number-label">Telefone</label>
+          <input type="number" id="number" min="8" max="11" placeholder="(DDD) 9 9999-9999">
+          <label for="university">Instituição de Ensino</label>
+          <input type="text" id="university" placeholder="Universidade/Faculdade" required>
         </fieldset>
-      </fieldset>
 
-      <fieldset class="section">
+        <legend class="legend">Detalhes do curso</legend>
+        <fieldset class="section">
+          <label for="course-name">Nome do Curso</label>
+          <input type="text" id="course-name" required>
+
+          <label for="dropdown">Nível acadêmico</label>
+          <select name="course-level" id="dropdown">
+            <option value="undergraduate">Graduação</option>
+            <option value="postgraduate">Pós-graduação</option>
+            <option value="master">Mestrado</option>
+            <option value="doctor">Doutorado</option>
+          </select>
+
+          <fieldset class="section" id="course-state">
+            <legend class="legend-radio">Situação acadêmica</legend>
+            <div class="state-flex">
+              <input type="radio" name="state" value='conclusion'>
+              <label for="">Em conclusão </label>
+            </div>
+            <div class="state-flex">
+              <input type="radio" name="state" value='completed'>
+              <label for="">Completo </label>
+            </div>
+            <div class="state-flex">
+              <input type="radio" name="state" value='suspended'>
+              <label for="">Trancado </label>
+            </div>
+          </fieldset>
+        </fieldset>
+
         <legend class="legend">Atividades acadêmicas e extracurriculares</legend>
-        <input type="checkbox" value="scholarship">
-        <label for="">Bolsista</label>
-        <input type="checkbox" value="assistantship">
-        <label for="">Monitoria</label>
-        <input type="checkbox" value="project">
-        <label for="">Projeto de pesquisa</label>
-        <input type="checkbox" value="group">
-        <label for="">Grupos de estudos</label>
-        <input type="checkbox" value="volunteer">
-        <label for="">Voluntário</label>
-      </fieldset>
+        <fieldset class="section academic">
+          <div class="check-academic">
+            <input type="checkbox" value="scholarship">
+            <label for="">Bolsista</label>
+            <input type="checkbox" value="assistantship">
+            <label for="">Monitoria</label>
+            <input type="checkbox" value="project">
+            <label for="">Proj. de pesquisa</label>
+            <input type="checkbox" value="group">
+            <label for="">Grupo de estudo</label>
+            <input type="checkbox" value="volunteer">
+            <label for="">Voluntário</label>
+            <input type="checkbox" value="congress">
+            <label for="">Congressos</label>
+          </div>
+        </fieldset>
 
-      <fieldset class="section">
         <legend class="legend">Avaliação da Instituição</legend>
-        <p>Deixe um comentário sobre sua Instituição de Ensino</p>
-        <label for="msg">Mensagem</label>
-        <textarea name="msg" id="" cols="30" rows="5"></textarea>
-      </fieldset>
-      <input type="submit" id="submit">
-    </form>
-  </main>
+        <fieldset class="section comment">
+          <p>Deixe um comentário sobre sua Instituição de Ensino</p>
+          <textarea name="msg" id="" cols="30" rows="7" placeholder="Digite seu comentário."></textarea>
+        </fieldset>
+        <input type="submit" id="submit">
+      </form>
+    </main>
+
+  </div>
 
 </body>
 
