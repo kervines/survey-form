@@ -9,32 +9,42 @@
 </head>
 
 <body>
+
   <div class="background">
     <header class="header">
       <h1 id="title">Formulário de Pesquisa Acadêmico</h1>
-      <p id="description">Venha compartilhar sua experiência acadêmica e deixar seu legado!</p>
+      <p id="description">Pesquisa de clima. Como está sua vida acadêmica? Conte-nos! </p>
     </header>
 
     <main class="main">
-
       <form action="" id="survey-form">
-
-        <legend class="legend">Informações pessoais</legend>
-        <fieldset class="section info">
+        <h2 class='subtitle'>Informações pessoais</h2>
+        <fieldset class="info">
           <label for="name" id="name-label">Nome</label>
           <input type="text" id="name" placeholder="Nome Completo" required>
           <label for="email" id="email-label">E-mail</label>
           <input type="email" id="email" placeholder="E-mail" required>
           <label for="number" id="number-label">Telefone</label>
-          <input type="number" id="number" min="8" max="11" placeholder="(DDD) 9 9999-9999">
-          <label for="university">Instituição de Ensino</label>
-          <input type="text" id="university" placeholder="Universidade/Faculdade" required>
+          <input type="number" id="ddd" min="2" max="3" placeholder="(DDD)">
+          <input type="number" id="number" min="8" max="9" placeholder="9 9999-9999">
+          <label for="age">Idade</label>
+          <input type="number" id="age" max="3">
+
+          <label for="gender">Gênero</label>
+          <select name="course-level" id="dropdown">
+            <option value="undergraduate">Masculino</option>
+            <option value="postgraduate">Feminino</option>
+          </select>
         </fieldset>
 
-        <legend class="legend">Detalhes do curso</legend>
-        <fieldset class="section">
+        <h2 class='subtitle'>Detalhes do curso</h2>
+        <fieldset class="">
+          <label for="university">Instituição de Ensino</label>
+          <input type="text" id="university" placeholder="Universidade/Faculdade" required>
           <label for="course-name">Nome do Curso</label>
           <input type="text" id="course-name" required>
+          <label for="period">Semestre</label>
+          <input type="text" id="period" required>
 
           <label for="dropdown">Nível acadêmico</label>
           <select name="course-level" id="dropdown">
@@ -44,25 +54,27 @@
             <option value="doctor">Doutorado</option>
           </select>
 
-          <fieldset class="section" id="course-state">
-            <legend class="legend-radio">Situação acadêmica</legend>
+          <div class="radio">
+            <h3 class='subtitle'>Situação acadêmica</h3>
             <div class="state-flex">
               <input type="radio" name="state" value='conclusion'>
-              <label for="">Em conclusão </label>
+              <label for="">Em andamento</label>
             </div>
             <div class="state-flex">
               <input type="radio" name="state" value='completed'>
               <label for="">Completo </label>
             </div>
-            <div class="state-flex">
-              <input type="radio" name="state" value='suspended'>
-              <label for="">Trancado </label>
-            </div>
-          </fieldset>
+          </div>
         </fieldset>
 
-        <legend class="legend">Atividades acadêmicas e extracurriculares</legend>
-        <fieldset class="section academic">
+        <h2 class="subtitle">Sobre você</h2>
+        <fieldset class="about-you">
+          <p>Por que você escolheu esse curso?</p>
+          <textarea name="msg-about-you" id="" cols="30" rows="3"></textarea>
+        </fieldset>
+
+        <h2 class='subtitle'>Atividades acadêmicas e extracurriculares</h2>
+        <fieldset class="academic">
           <div class="check-academic">
             <input type="checkbox" value="scholarship">
             <label for="">Bolsista</label>
@@ -79,11 +91,12 @@
           </div>
         </fieldset>
 
-        <legend class="legend">Avaliação da Instituição</legend>
-        <fieldset class="section comment">
+        <h2 class='subtitle'>Avaliação da Instituição</h2>
+        <fieldset class="comment">
           <p>Deixe um comentário sobre sua Instituição de Ensino</p>
           <textarea name="msg" id="" cols="30" rows="7" placeholder="Digite seu comentário."></textarea>
         </fieldset>
+
         <input type="submit" id="submit">
       </form>
     </main>
