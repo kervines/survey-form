@@ -23,27 +23,26 @@
         <label for="name" id="name-label">Nome</label>
         <input type="text" id="name" placeholder="Nome Completo" required>
 
-        <div class="contact">
-          <div class="email">
-            <label for="email" id="email-label">E-mail</label>
-            <input type="email" id="email" placeholder="E-mail" required>
-          </div>
-          <div class="phone">
+        <label for="email" id="email-label">E-mail</label>
+        <input type="email" id="email" placeholder="E-mail" required>
+
+        <div class="info-add">
+          <div class="info-number flex-column ">
             <label for="number" id="number-label">Telefone</label>
-            <input type="number" id="ddd" min="2" max="3" placeholder="DDD">
-            <input type="number" id="number" min="8" max="9" placeholder="9 9999-9999">
+            <input type="number" id="number" min="8" max="20" placeholder="9 9999-9999">
           </div>
-        </div>
 
-        <div class="age">
-          <label for="age">Idade</label>
-          <input type="number" id="age" max="3">
-
-          <label for="gender">Gênero</label>
-          <select name="course-level" id="dropdown">
-            <option value="undergraduate">Masculino</option>
-            <option value="postgraduate">Feminino</option>
-          </select>
+          <div class="info-gender flex-column ">
+            <label for="gender">Gênero</label>
+            <select name="course-level" id="dropdown">
+              <option value="undergraduate">Masculino</option>
+              <option value="postgraduate">Feminino</option>
+            </select>
+          </div>
+          <div class="info-age flex-column ">
+            <label for="age">Idade</label>
+            <input type="number" id="age" max="3">
+          </div>
         </div>
 
       </fieldset>
