@@ -8,7 +8,7 @@
 
 body {
   height: 100vh;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 
   font-family: 'Roboto Slab', sans-serif;
@@ -16,5 +16,11 @@ body {
 
 .background {
   height: 100%;
+  padding: 10px;
   background-color: #ebebeb;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
 }
