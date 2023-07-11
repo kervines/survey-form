@@ -10,6 +10,8 @@ body {
   height: 100vh;
   max-width: 800px;
   margin: auto;
+
+  font-family: 'Roboto Slab', sans-serif;
 }
 
 .background {
