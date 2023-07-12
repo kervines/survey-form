@@ -1,9 +1,3 @@
-.info input {
-  padding: 0.3rem;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
 .email input {
   width: 385px;
 }
@@ -20,9 +14,4 @@
 
 .info-age input {
   width: 50px;
-}
-
-.info-add select {
-  padding: 5px;
-  font-size: 1rem;
 }
