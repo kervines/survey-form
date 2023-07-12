@@ -65,7 +65,7 @@
         </select>
 
         <div class="radio">
-          <h3 class='subtitle'>Situação acadêmica</h3>
+          <h3>Situação acadêmica</h3>
           <div class="state-flex">
             <input type="radio" name="state" value='conclusion'>
             <label for="">Em andamento</label>
@@ -83,22 +83,56 @@
         <textarea name="msg-about-you" id="" cols="30" rows="3"></textarea>
       </fieldset>
 
-      <fieldset class="academic">
+      <fieldset id="academic">
         <h2 class='subtitle'>Atividades acadêmicas e extracurriculares</h2>
         <div class="check-academic">
-          <input type="checkbox" value="scholarship">
-          <label for="">Bolsista</label>
-          <input type="checkbox" value="assistantship">
-          <label for="">Monitoria</label>
-          <input type="checkbox" value="project">
-          <label for="">Proj. de pesquisa</label>
-          <input type="checkbox" value="group">
-          <label for="">Grupo de estudo</label>
-          <input type="checkbox" value="volunteer">
-          <label for="">Voluntário</label>
-          <input type="checkbox" value="congress">
-          <label for="">Congressos</label>
-        </div>
+          <div class="col-1">
+            <div>
+              <input type="checkbox" value="Bolsista">
+              <label for="">Bolsista</label>
+            </div>
+            <div>
+              <input type="checkbox" value="Monitoria">
+              <label for="">Monitoria</label>
+            </div>
+            <div>
+              <input type="checkbox" value="Proj. de pesquisa">
+              <label for="">Proj. de pesquisa</label>
+            </div>
+          </div>
+          <div class="col-2">
+            <div><input type="checkbox" value="Grupo de estudo">
+              <label for="">Grupo de estudo</label>
+            </div>
+            <div><input type="checkbox" value="Voluntário">
+              <label for="">Voluntário</label>
+            </div>
+            <div><input type="checkbox" value="Congressos">
+              <label for="">Congressos</label>
+            </div>
+          </div>
+
+          <div class="col-3">
+            <div>
+              <input type="checkbox" value="Intercâmbio">
+              <label for="">Intercâmbio</label>
+            </div>
+            <div>
+              <input type="checkbox" value="Estágio">
+              <label for="">Estágio</label>
+            </div>
+            <div id="other">
+              <input class="other" type="checkbox" value="Outros">
+              <label for="">Outros</label>
+
+              <div class="other-resp">
+                <input type="text" name="other" id="" placeholder="Outros">
+              </div>
+            </div>
+
+          </div>
+
+
       </fieldset>
 
       <fieldset class="comment">
