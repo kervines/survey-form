@@ -1,0 +1,17 @@
+.email input {
+  width: 385px;
+}
+
+.info-add {
+  display: flex;
+  gap: 25px;
+}
+
+.info-number #number {
+  width: 250px;
+  text-align: end;
+}
+
+.info-age input {
+  width: 50px;
+}

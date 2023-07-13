@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+@import url('info.css');
+@import url('academic.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', sans-serif;
+}
+html {
+}
+body {
+  height: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* class para transformar uma tag em flex */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* todos os h2 */
+.subtitle {
+  margin-bottom: 15px;
+}
+
+.background {
+  height: 100%;
+  max-width: 800px;
+  padding: 10px;
+  background-color: #ebebeb;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  height: 100%;
+}
+
+#description span {
+  color: blueviolet;
+}
+
+fieldset {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 700px;
+  margin: auto;
+}
+
+input {
+  padding: 0.3rem;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+/* Seção do curso */
+.radio h3 {
+  margin: 10px 0;
+}
+
+/* Seção de comentarios e avaliação */
+.comment h2 {
+  margin: 0;
+}
+.comment p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.comment textarea {
+  padding: 5px;
+  font-size: 16px;
+}
+
+#submit {
+  margin-top: 15px;
+}
