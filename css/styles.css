@@ -8,9 +8,10 @@
   box-sizing: border-box;
   font-family: 'Roboto Slab', sans-serif;
 }
-
+html {
+}
 body {
-  height: 100vh;
+  height: 100%;
   max-width: 900px;
   margin: auto;
 }
@@ -28,6 +29,7 @@ body {
 
 .background {
   height: 100%;
+  max-width: 800px;
   padding: 10px;
   background-color: #ebebeb;
 }
@@ -35,6 +37,14 @@ body {
 .header {
   text-align: center;
   padding: 20px;
+}
+
+form {
+  height: 100%;
+}
+
+#description span {
+  color: blueviolet;
 }
 
 fieldset {
@@ -61,4 +71,21 @@ select {
 /* Seção do curso */
 .radio h3 {
   margin: 10px 0;
+}
+
+/* Seção de comentarios e avaliação */
+.comment h2 {
+  margin: 0;
+}
+.comment p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.comment textarea {
+  padding: 5px;
+  font-size: 16px;
+}
+
+#submit {
+  margin-top: 15px;
 }

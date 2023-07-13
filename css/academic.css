@@ -17,18 +17,18 @@
 }
 
 .other-resp input {
-  width: 130px;
+  width: 0px;
   opacity: 0;
   position: absolute;
   top: -5px;
   left: 15px;
   z-index: -1;
-  transform: scaleY(0);
-  transition: all 0.5s;
+
+  transition: all 0.3s;
 }
 
 .col-3:has(input[class='other']:checked) .other-resp input {
+  width: 130px;
   opacity: 1;
   z-index: 1;
-  transform: scaleY(1);
 }
