@@ -65,12 +65,12 @@ form {
 }
 
 #title {
-  color: violet;
+  color: #ffaeff;
 }
 
 #description span {
   font-size: 22px;
-  color: blueviolet;
+  color: #c07dff;
 }
 
 fieldset {
@@ -181,5 +181,9 @@ select {
   }
   .info-gender {
     margin-bottom: 10px;
+  }
+
+  .check-academic {
+    font-size: 12px;
   }
 }
