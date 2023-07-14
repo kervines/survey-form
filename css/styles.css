@@ -152,7 +152,7 @@ select {
 
 @media (max-width: 420px) {
   .body {
-    padding: 0;
+    padding: 15px;
   }
   .background {
     max-width: 400px;
