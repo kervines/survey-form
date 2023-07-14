@@ -12,7 +12,7 @@
 body {
   height: 100%;
   max-width: 900px;
-  margin: auto;
+  margin: 0 auto;
   padding: 15px;
   color: #e4e4e4;
   /* background-image: url('../img/endless-constellation.svg'); */
@@ -45,6 +45,7 @@ body::before {
 }
 
 .background {
+  margin: auto;
   height: 100%;
   max-width: 800px;
   padding: 10px;
