@@ -186,6 +186,11 @@ select {
   }
 
   .check-academic {
-    font-size: 10px;
+    font-size: 11px;
+  }
+
+  .col-3:has(input[class='other']:checked) .other-resp input {
+    width: 80px;
+    height: 25px;
   }
 }
