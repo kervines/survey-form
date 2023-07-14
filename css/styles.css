@@ -68,7 +68,7 @@ form {
   color: #ffaeff;
 }
 
-#description span {
+.header-p {
   font-size: 22px;
   color: #c07dff;
 }
@@ -158,9 +158,10 @@ select {
     max-width: 400px;
   }
   .header {
-    text-align: left;
+    /* text-align: left; */
   }
   #title {
+    font-size: 30px;
     margin-bottom: 10px;
   }
 
@@ -168,7 +169,7 @@ select {
     font-size: 14px;
   }
 
-  #description span {
+  .header-p {
     font-size: 20px;
   }
 
@@ -183,7 +184,11 @@ select {
     margin-bottom: 10px;
   }
 
+  .subtitle {
+    margin-bottom: 13px;
+  }
+
   .check-academic {
-    font-size: 12px;
+    font-size: 10px;
   }
 }
